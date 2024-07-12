@@ -1,5 +1,3 @@
-import asyncio
-
 import threading
 
 from database_writer.database_writer import DatabaseWriter
@@ -11,11 +9,7 @@ import cv2
 writer = DatabaseWriter()
 backend(writer)
 
-
-#Initialize the Flask app
 app = Flask(__name__)
-
-
 
 def gen_frames():
     while True:
